@@ -1,0 +1,99 @@
+.loading{
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.progress{
+    width: 100%;
+    height: 28px;
+    border-radius: 2px;
+    background: #20222A;
+    margin: 0;
+    /* border: 1px solid #1A1C21; */
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px #222, 0 1px 0 #484848;
+}
+
+.progress_bar{
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(54,168,233); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(54,168,233,1) 0%, rgba(17,126,210,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(54,168,233,1)), color-stop(100%,rgba(17,126,210,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(54,168,233,1) 0%,rgba(17,126,210,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(54,168,233,1) 0%,rgba(17,126,210,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(54,168,233,1) 0%,rgba(17,126,210,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(54,168,233,1) 0%,rgba(17,126,210,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36a8e9', endColorstr='#117ed2',GradientType=0 ); /* IE6-9 */
+    padding: 0;
+    margin: 0;    
+}
+
+#skill70 {
+    -webkit-animation-name: skillbar70; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: skillbar70;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#skill80 {
+    -webkit-animation-name: skillbar80; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: skillbar80;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#skill90 {
+    -webkit-animation-name: skillbar90; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: skillbar90;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes skillbar70 {
+    0% { width: 0% }
+    100% { width: 70% }
+}
+
+@keyframes skillbar80 {
+    0% { width: 0% }
+    100% { width: 80% }
+}
+
+@keyframes skillbar90 {
+    0% { width: 0% }
+    100% { width: 90% }
+}
+
+#prog_status{
+    position: absolute;
+    top: 3px;
+    left: 15px;
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    text-shadow: 0 -1px 0 #191A1E;
+}
+
+@media only screen and (max-width: 600px) {
+    .loading {
+        max-width: 300px;
+    }
+}
