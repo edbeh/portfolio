@@ -94,7 +94,7 @@ export class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename="/portfolio">
         <div className="App">
           <header className="App-header">
             <TransitionGroup>
