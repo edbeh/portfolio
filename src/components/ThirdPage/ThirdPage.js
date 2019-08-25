@@ -1,23 +1,25 @@
 import React from 'react';
+// eslint-disable-next-line
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Cloud from './Cloud/Cloud.js'
 
 class ThirdPage extends React.Component {
     render() {
         return (
-            <TransitionGroup>
-                <CSSTransition
-                    key="3"
-                    timeout={1000}
-                    classNames="fade"
-                >
+            // <TransitionGroup>
+            //     <CSSTransition
+            //         key="3"
+            //         timeout={1000}
+            //         classNames="fade"
+            //     >
                     <div>
                         <h1>
-                            From Development to Launch<br/>
-                            <span>on Amazon Web Services</span>
+                            From Development to Launching<br/>
+                            <span>on Cloud Platforms</span>
                         </h1>
+                        <Cloud />
                         <p>
-                            I learned to develop and host apps because I'm passionate about building useful web apps.
+                            Of course! My favourite platform is Amazon AWS, but I can launch on sites like Heroku too.
                         </p>
                         <p>
                             I'd love to work with you if you are developing a Javascript app!
@@ -29,8 +31,8 @@ class ThirdPage extends React.Component {
                             Contact me!
                         </Link> 
                     </div>
-                </CSSTransition>
-            </TransitionGroup>
+            //     </CSSTransition>
+            // </TransitionGroup>
         );
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import FirstPage from './components/FirstPage/FirstPage.js';
 import SecondPage from './components/SecondPage/SecondPage.js';
@@ -64,6 +64,7 @@ export class App extends React.Component {
     currentSpeech : '',
     speechActive: false,
     clickNumber: 0,
+    firstLoad: true,
     appear: true
   }
 
@@ -89,7 +90,9 @@ export class App extends React.Component {
   }
 
   componentDidMount() {
-    this.randomSpeech();
+    setTimeout(() => {
+      this.randomSpeech();
+    }, 2000);
   }
 
   render() {
@@ -97,21 +100,24 @@ export class App extends React.Component {
       <Router basename="/portfolio">
         <div className="App">
           <header className="App-header">
-            <TransitionGroup>
-              <CSSTransition
-                key="1"
-                in={this.state.appear}
-                timeout={1000}
-                classNames="fade"
-                appear={true}
-              >
-                <Switch>
-                  <Route exact path="/" component={ FirstPage } />
-                  <Route path="/skills" component={ SecondPage } />
-                  <Route path="/launch" component={ ThirdPage } />
-                </Switch>
-              </CSSTransition>
-            </TransitionGroup>
+            <Route render={({location}) => (
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.key}
+                  in={this.state.appear}
+                  timeout={1500}
+                  classNames="fade"
+                  appear={true}
+                >
+                  <Switch location={location}>
+                    <Route exact path="/" component={ FirstPage } />
+                    <Route path="/skills" component={ SecondPage } />
+                    <Route path="/launch" component={ ThirdPage } />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )} />
+            
             
  
             <div className="character">

@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   padding: 5px;
   background-color: #282c34;
@@ -18,6 +12,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Header {
+  position: absolute;
 }
 
 span {
@@ -54,31 +52,35 @@ span {
 
 .fade-appear.fade-appear-active {
   opacity: 1;
-  transition: opacity 1000ms linear;
+  transition: opacity 1500ms linear;
 }
 
 /* Fade enter */
 .fade-enter {
+  /* position: absolute; */
   opacity: 0;
   z-index: 1;
 }
 
-.fade-enter.fade-enter.active {
+.fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 5000ms linear;
+  transition: opacity 1500ms linear;
 }
 
 /* Fade exit */
 .fade-exit {
+  position: absolute;
   opacity: 1;
 }
 
-.fade-exit-fade-exit-active {
+.fade-exit.fade-exit-active {
+  /* position: absolute; */
   opacity: 0;
-  transition: opacity 5000ms ease-in;
+  transition: opacity 0ms linear;
 }
 
 .fade-exit-done {
+  /* position: absolute; */
   opacity: 0;
 }
 
