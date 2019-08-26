@@ -76,15 +76,13 @@ span {
 .fade-exit.fade-exit-active {
   /* position: absolute; */
   opacity: 0;
-  transition: opacity 0ms linear;
+  transition: opacity 0ms;
 }
 
 .fade-exit-done {
   /* position: absolute; */
   opacity: 0;
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .character {

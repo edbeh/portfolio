@@ -20,10 +20,11 @@
 .notification-text {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     font: inherit;
     animation: fade-in .65s ease-in forwards;
-    font-size: 0.9em;
+    /* font-size: 120%; */
 }
 
 @keyframes scale-in {
@@ -52,3 +53,24 @@
 		opacity: .8;
 	}
 }
+
+@media screen and (max-width: 2000px) {
+    .notification-text {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .notification-text {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .notification-text {
+        font-size: 95%;
+    }
+}
+
+
+

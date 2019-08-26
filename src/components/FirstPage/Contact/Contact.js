@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class Contact extends React.Component {
     render() {
         return (  
-            <a href="mailto:edbeh89@gmail.com" className="rectangle">
+            <a href="mailto:contact@edwardbeh.com" className="rectangle">
                 <div className="notification-text">
                     <FontAwesomeIcon icon={faEnvelope} size="lg"/>
-                    <span>&nbsp;Edbeh89@gmail.com</span>
+                    <span>&nbsp;contact@edwardbeh.com</span>
                 </div>
             </a>
         );
