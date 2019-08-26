@@ -1,7 +1,7 @@
 .bunny{
     font-size: 5px; /*> size */ 
     position : relative;
-    top      : 80%;
+    /* top      : 80%; */
     width    : 16em;
     height   : 20em;
     margin   : 5em 0 0 5em;
