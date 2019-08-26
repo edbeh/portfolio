@@ -98,7 +98,7 @@ export class App extends React.Component {
 
   render() {
     return (
-      <HashRouter basename="/portfolio">
+      <HashRouter>
         <div className="App">
           <header className="App-header">
             <Route render={({location}) => (
