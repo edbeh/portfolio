@@ -113,7 +113,7 @@ export class App extends React.Component {
                     <Route exact path="/" component={ FirstPage } />
                     <Route path="/skills" component={ SecondPage } />
                     <Route path="/launch" component={ ThirdPage } />
-                    <Route path="/*" component={ FirstPage } />
+                    <Route component={ FirstPage } />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
