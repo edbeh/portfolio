@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import FirstPage from './components/FirstPage/FirstPage.js';
 import SecondPage from './components/SecondPage/SecondPage.js';
@@ -97,7 +98,7 @@ export class App extends React.Component {
 
   render() {
     return (
-      <Router basename="/portfolio">
+      <HashRouter basename="/portfolio">
         <div className="App">
           <header className="App-header">
             <Route render={({location}) => (
@@ -128,7 +129,7 @@ export class App extends React.Component {
             </div>
           </header>
         </div>
-      </Router>
+      </HashRouter>
     )
   }
 }
