@@ -18,7 +18,7 @@ export class App extends React.Component {
     speech: [
       {
         id: 0,
-        content: `Hello there, welcome to my page! You can click me to talk to me!`
+        content: `Hello there, welcome to my portfolio page! You can click me to talk to me!`
       },
       {
         id: 1,
