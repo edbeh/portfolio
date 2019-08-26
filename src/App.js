@@ -104,7 +104,7 @@ export class App extends React.Component {
             <Route render={({location}) => (
               <TransitionGroup>
                 <CSSTransition
-                  key={location.key}
+                  key={location.pathname}
                   in={this.state.appear}
                   timeout={1500}
                   classNames="fade"
