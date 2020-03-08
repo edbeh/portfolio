@@ -19,7 +19,7 @@ class Contact extends React.Component {
             >
             <div className="notification-text">
                 <FontAwesomeIcon icon={faComments} size="lg"/>
-                <span>&nbsp;Contact Me on Upwork!</span>
+                <span>&nbsp;Contact Me at edbeh89@gmail.com!</span>
             </div>
         </a>
         );
