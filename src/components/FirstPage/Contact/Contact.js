@@ -13,7 +13,7 @@ class Contact extends React.Component {
             //     </div>
             // </a>
             <a 
-                href="https://www.upwork.com/freelancers/~01258e6b7e5fd37215" 
+                href="mailto:edbeh89@gmail.com" 
                 className="rectangle"
                 target="_blank"
             >
