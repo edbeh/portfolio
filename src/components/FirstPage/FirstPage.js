@@ -13,7 +13,7 @@ class FirstPage extends React.Component {
                     <span>with React.js and Node.js </span>
                 </h1>
                 <p>
-                    Hi, I'm Edward and I've been building highly responsive web applications since 2017.
+                    Hi, I'm Edward and I've been building highly responsive web applications since 2018.
                 </p>
                 <p>
                     View a demo of my React movie application <a className="App-link" href="https://edbeh.github.io/react-movie" target="_blank" rel="noopener noreferrer">here</a>.
